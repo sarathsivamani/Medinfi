@@ -16,7 +16,7 @@ class DB_conection
 	
 	$sql="SELECT  *, DATE_FORMAT(lastupdated, '%m/%d/%Y') 
                       	from doctor WHERE   lastupdated BETWEEN CURDATE() - INTERVAL 30 DAY AND CURDATE() 
-						ORDER BY hospital_name='Appolo' DESC,  qualification DESC, hospital_name ASC, location DESC, name DESC
+						ORDER BY hospital_name='Appolo' DESC, hospital_name ASC, location DESC, name DESC, qualification DESC
 						
 						LIMIT 150
 						 ";
